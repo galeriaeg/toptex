@@ -4,6 +4,7 @@ Stack usada:
 - HTML
 - CSS
 - JS
+- JQuery
 - MySQL
 - Framework Material Design Lite
 - Google Icons
