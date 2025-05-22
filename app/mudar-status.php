@@ -1,12 +1,11 @@
 <?php
 	include "session.php"; 
-	$idUsuarioLogado = $_SESSION['id'];
 	
 	$id_produto = $_GET['idp'];
 	$status = $_GET['sts'];
 	
 	if(empty($id_produto)){
-		echo "<script>window.location.href='logout.php';</script>";
+		echo "<script>location.assign('logout.php');</script>";
 		exit();	
 	}
 	else{
@@ -28,6 +27,5 @@
 	}
 	
 	
-	mysqli_close($conn);	
-	
+	mysqli_close($conn);
 ?>
