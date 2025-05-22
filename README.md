@@ -1,7 +1,12 @@
 # toptex
-Projeto web: catálogo de produtos (tecidos). Será usado pelos atores Admin e Cliente. 
+Projeto web: catálogo de produtos (tecidos). Será usado pelos atores Admin e Cliente. O acesso à aplicação será essencialmente via tablet e smartphone.
 Stack usada: 
-HTML, CSS, JS, MySQL, Framework Material Design Lite, Google Icons
+- HTML
+- CSS
+- JS
+- MySQL
+- Framework Material Design Lite
+- Google Icons
 
 Funcionalidades Admin: 
 - Mantém usuários;
