@@ -1,3 +1,4 @@
+
 <?php
 	if (session_status() == PHP_SESSION_NONE) {
 		// Nenhuma sessão está ativa, então podemos iniciar uma.
@@ -13,4 +14,5 @@
 		//echo $logado = $_SESSION['email'];
 		echo "sessão ativa";
 	}	
+
 ?>

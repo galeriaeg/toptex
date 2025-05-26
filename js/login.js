@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function validaLogin(formLogin){
 	
 	if (formLogin.email.value == ""){ 
@@ -24,4 +25,32 @@ function fechaAlerta(){
 
 function fechaAlertaAut(){
 	document.getElementById('boxalerta').style.display='none';
+=======
+function validaLogin(formLogin){
+	
+	if (formLogin.email.value == ""){ 
+		//alert("Informe seu email!");
+		document.getElementById('box-alerta').style.display='flex';
+		formLogin.email.focus();
+		return (false); 
+	}
+	
+	if (formLogin.senha.value == ""){ 
+		//alert("Informe seu senha!");
+		document.getElementById('box-alerta').style.display='flex';
+		formLogin.senha.focus();
+		return (false); 
+	}
+	
+}
+
+
+function fechaAlerta(){
+	document.getElementById('box-alerta').style.display='none';
+}
+
+
+function fechaAlertaAut(){
+	document.getElementById('boxalerta').style.display='none';
+>>>>>>> dbebc9f221d07d607688e79868c60ebc27d53f2b
 }
