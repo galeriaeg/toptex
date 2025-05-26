@@ -5,7 +5,7 @@
 		<link rel="shortcut icon" href="./img/favicon1616.png" />
 		<link rel="shortcut icon" href="./img/favicon3232.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>TopTex</title>
+		<title>TopTex!</title>
 		<!-- link CDN Material Design Lite -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="css/material.min.css" />
