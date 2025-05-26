@@ -1,0 +1,200 @@
+@media only screen and (min-width: 840px) {
+	/*** classes do material design customizadas***/
+	
+	.mdl-grid{
+		min-height:10px;
+		padding-top:30px;
+	}
+	
+	
+	.mdl-layout__container{
+		width:768px;
+		left:50%;
+		margin-left:-384px;
+		
+	}
+	
+	.mdl-textfield{
+		width:300px;
+		margin:0;
+		padding-bottom:0;
+		padding-top:27px;
+	}
+	
+	.mdl-card__supporting-text{
+		padding:5%;
+	}
+	
+}
+
+@media (max-width: 839px) {
+	
+	
+	.mdl-grid{
+		min-height:10px;
+		/*background:blue;*/
+	}
+	
+	.mdl-textfield{
+		width:100%;
+		margin:0;
+		padding-bottom:0;
+		padding-top:27px;
+	}
+}
+
+
+.mdl-card{
+	width:auto;
+}
+
+
+.mdl-shadow--4dp{
+	background-color:#f4f4f4;
+	width:100%;
+	border-bottom: 6px solid #8BC34A;
+	border-radius:8px;
+}
+
+
+nav.mdl-navigation .mdl-badge[data-badge]:after{
+	top:5px;
+	right:-8px;
+}
+
+
+.mdl-cell--12-col{
+	background-color:#e5eaae;
+	margin-bottom:0;
+	height:fit-content;
+}
+
+
+.mdl-cell--4-col{
+	/*background-color:aqua;*/
+	display:flex;
+}
+
+
+.mdl-button.mdl-button--colored{
+	color:#566f88;
+}
+
+
+.mdl-layout__header .mdl-layout__drawer-button{
+	top:35px;
+	color:#425c76;
+}
+
+
+.mdl-layout__header .mdl-layout__drawer-button{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+/*** fontes ****/
+
+h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+}
+
+h6{
+	font-size:14px;
+}
+
+h5{
+	font-size:15px;
+}
+
+h4{
+
+	margin-bottom:15px;
+}
+
+a{
+	color:#425c76;
+	text-decoration:none;
+}
+
+
+label{
+	font-size:13px;
+}
+
+.box-tag-filtro{
+	margin-top:30px;
+	/*background-color:#0dd;*/
+}
+
+
+.box-alert{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+/*** cores ****/
+
+.text_red{
+	color:red;
+}
+
+.text_blue{
+	color:#1784f0;
+}
+
+.text_bluedark{
+	color:#425c76;
+}
+
+.text_bluesky{
+	color:#b9d0ff;
+}
+
+.text_gray{
+	color:#555;
+}
+
+
+
+.top-user{
+	background-color:#cddeff;
+	height:35px;
+	padding: 0 25px;
+	display:flex;
+	justify-content:end;
+	align-items:center;
+	z-index:4;
+	color:#425c76;
+}
+
+
+.box-logo{
+	margin-top:6px;
+	cursor:pointer;
+}
+
+
+.box-titulo-page{
+	padding:0;
+	margin:27px 0 0 0;
+	display:flex;
+	align-items:center;
+}
+.box-titulo-page span{
+	margin-right:15px;
+}
+
+.box-form{
+	display:block;
+	margin:0 auto;
+	width:300px;
+}
+
+.btn-submit{
+	margin-top:30px;
+}
