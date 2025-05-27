@@ -12,7 +12,7 @@
 	}
 	else{
 		//echo $logado = $_SESSION['email'];
-		echo "sessão ativa";
+		//echo "sessão ativa";
 	}	
 
 ?>

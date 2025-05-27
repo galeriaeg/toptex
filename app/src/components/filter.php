@@ -17,7 +17,7 @@
 	</select>
 	<label class="mdl-textfield__label" for="sample1">Categoria</label>
 	
-	<section style="display:none" class="box-tag-filtro">
+	<section style="display:block" class="box-tag-filtro">
 		<span class="mdl-chip mdl-chip--deletable">
 			<span class="mdl-chip__text">Deletable Chip</span>
 			<button type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>

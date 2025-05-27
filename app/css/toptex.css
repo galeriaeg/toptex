@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 @media only screen and (min-width: 840px) {
 	/*** classes do material design customizadas***/
 	
 	.mdl-grid{
 		min-height:10px;
 		padding-top:30px;
+		
 	}
 	
 	
@@ -45,48 +45,49 @@
 }
 
 
+
+
+
+/*** customizado ***/
+
 .mdl-card{
 	width:auto;
 }
 
-
 .mdl-shadow--4dp{
 	background-color:#f4f4f4;
 	width:100%;
+	min-width:200px;
 	border-bottom: 6px solid #8BC34A;
 	border-radius:8px;
 }
-
 
 nav.mdl-navigation .mdl-badge[data-badge]:after{
 	top:5px;
 	right:-8px;
 }
 
-
 .mdl-cell--12-col{
 	background-color:#e5eaae;
 	margin-bottom:0;
 	height:fit-content;
+	display:flex;
+	flex-wrap: wrap
 }
-
 
 .mdl-cell--4-col{
 	/*background-color:aqua;*/
 	display:flex;
 }
 
-
 .mdl-button.mdl-button--colored{
 	color:#566f88;
 }
 
-
 .mdl-layout__header .mdl-layout__drawer-button{
-	top:35px;
+	top:27px; /* btn bars*/
 	color:#425c76;
 }
-
 
 .mdl-layout__header .mdl-layout__drawer-button{
 	display:flex;
@@ -94,6 +95,9 @@ nav.mdl-navigation .mdl-badge[data-badge]:after{
 	align-items:center;
 }
 
+.mdl-button{
+	font-size:14px;
+}
 
 /*** fontes ****/
 
@@ -126,7 +130,7 @@ label{
 }
 
 .box-tag-filtro{
-	margin-top:30px;
+	margin-top:16px;
 	/*background-color:#0dd;*/
 }
 
@@ -188,6 +192,10 @@ label{
 }
 .box-titulo-page span{
 	margin-right:15px;
+}
+
+.box-filter{
+	margin:0 0 30px 0;
 }
 
 .box-form{
