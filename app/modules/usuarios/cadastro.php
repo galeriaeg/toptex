@@ -25,14 +25,21 @@
 		
 		require_once "config/conecta.php";
 		
-		echo $senha = sha1($senha);
-		
 		if(!empty($senha)){
+		
+			if(strlen($senha)<8){
+				echo "<script>alert('Sua senha dever ter entre 8 e 12 caracteres!');</script>";
+				echo "<script>location.assign('painel.php?p=2');</script>";
+				exit();	
+			}
+		
+			$senha_hash = sha1($senha); 
 			//atualiza senha se necessário
 			$stmt = $conn->prepare("UPDATE t_usuario SET senha = ? WHERE id = ?");
-			$stmt->bind_param("si", $senha,$id_usuario);		
+			$stmt->bind_param("si", $senha_hash,$id_usuario);
+			$stmt->execute();
 		}		
-		
+
 		// Prepara a consulta SQL para evitar SQL Injection
 		$stmt = $conn->prepare("UPDATE t_usuario SET nome = ?, email = ?, telefone = ?  WHERE id = ?");
 		$stmt->bind_param("sssi", $nome, $email, $telefone, $id_usuario);

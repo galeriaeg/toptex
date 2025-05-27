@@ -44,6 +44,10 @@
 			include_once "modules/categorias/index.php";
 			break;
 			
+			case 41:
+			include_once "modules/categorias/cadastro.php";
+			break;
+			
 			case 99:
 			include_once "logout.php";
 			break;
