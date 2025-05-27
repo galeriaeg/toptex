@@ -20,39 +20,25 @@
 	
 	
 	<body>
+	
+	<!--teste real -->
 		
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		
-
 			
 			<?php include "src/components/topo-user.php"; ?>
 			
-			<!--div class="top-user">
-				<a href="#"><?php //echo $partes[0]; ?></a> &nbsp;<span class="material-symbols-outlined">person</span>
-			</div-->
-			
 			<header class="mdl-layout__header">
 				<?php include "src/components/topo.php"; ?>
-				<!-- div class="mdl-layout__header-row">
-					<div class="box-logo">
-						<img src="./img/logo-toptex.png" alt="Logo TopTex" onclick="window.location.href='index.php'" />
-					</div>
-					<div class="mdl-layout-spacer"></div>
-					<nav class="mdl-navigation mdl-cell--hide-phone mdl-cell--hide-tablet">
-						<a href="#" class="mdl-navigation__link">Inicio</a>
-						<a href="#" class="mdl-navigation__link">Categoria</a>
-						<a href="#" class="mdl-navigation__link">Produtos</a>
-					</nav>
-				</div-->
 			</header>
+			
 			
 			<div class="mdl-layout__drawer">
 				<span class="mdl-layout-title">PAINEL</span>
 				<nav class="mdl-navigation">
 					<a href="#" class="mdl-navigation__link"><?php echo $nomeUsuarioLogado ?></a>
-					<a href="painel.php" class="mdl-navigation__link">Inicio</a>
-					<a href="#" class="mdl-navigation__link">Categoria</a>
-					<a href="module.php" class="mdl-navigation__link">Produtos</a>
+					<a href="painel.php?p=1" class="mdl-navigation__link">Inicio</a>
+					<a href="painel.php?p=3" class="mdl-navigation__link">Produtos</a>
+					<a href="painel.php?p=4" class="mdl-navigation__link">Categoria</a>
 					<a href="logout.php" class="mdl-navigation__link">Sair</a>
 				</nav>
 			</div>
@@ -61,7 +47,7 @@
 			
 			
 			<main class="mdl-layout__content">
-			
+				
 				<div class="mdl-grid">
 					<?php echo content(); ?>
 				</div>

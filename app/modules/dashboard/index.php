@@ -1,17 +1,23 @@
 <?php
 	include "session.php";
 	@$categoria = $_GET['c'];
+	
+	require_once "config/conecta.php";
 ?>
+
+<div class="mdl-cell mdl-cell--12-col box-page-topo">
+	<span class="material-symbols-outlined">dashboard</span>
+	<h4>Dashboard</h4>
+</div>
+
 
 <div class="mdl-cell mdl-cell--12-col">
 	
 	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label box-filter">
-		<select class="mdl-textfield__input" type="select" onchange="buscar(this.value)" name="categoria" id="sample1">
+		<select class="mdl-textfield__input text_gray" type="select" onchange="buscar(this.value)" name="categoria" id="sample1">
 			<option selected disabled>Selecione um tipo de malha</option>
 			<?php
 				// select filtro
-				require_once "config/conecta.php";
-				
 				$sql = "SELECT * FROM t_categoria WHERE status = 1";
 				$res = mysqli_query($conn, $sql);
 				$totalPath = mysqli_num_rows($res);
@@ -23,7 +29,7 @@
 				}
 			?>
 		</select>
-		<!--label class="mdl-textfield__label" for="sample1">Categoria</label-->
+		
 		
 		<?php
 			if(!empty($categoria)){
@@ -35,8 +41,6 @@
 					$categoria_id	=	$row['id'];
 					$categoria_nome	=	$row['nome'];
 				}
-				
-				
 				echo "<section class='box-tag-filtro'>
 				<span class='mdl-chip mdl-chip--deletable'>
 				<span class='mdl-chip__text'>$categoria_nome</span>
@@ -52,7 +56,7 @@
 
 
 
-<div class="mdl-cell mdl-cell--12-col">
+<div class="mdl-cell mdl-cell--12-col box-main">
 	<?php
 		if(empty($categoria)){
 			
@@ -98,7 +102,6 @@
 				$labelStatus
 				</a>
 				</div>
-				
 				</div>
 				</div>";
 			}
@@ -124,13 +127,14 @@
 				$produto_status	=	$row['status'];
 				$produto_categoria	=	$row['id_categoria'];
 				
-				
 				//define status do cadastro na borda do card
-				if($produto_status==1)
-				$corStatus = '#83d81f';//verde : ativo
-				else
-				$corStatus = '#ff1100';//vermelho : inativo
-				
+				if($produto_status==1){
+					$corStatus = '#83d81f';//verde : ativo
+					$labelStatus = 'Desativar';
+					}else{
+					$corStatus = '#ff1100';//vermelho : inativo
+					$labelStatus = 'Ativar';
+				}
 				
 				echo "
 				<div class='mdl-cell mdl-cell--4-col'>
@@ -147,8 +151,8 @@
 				<a class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect'>
 				Editar
 				</a>
-				<a href='./modules/produtos/mudar-status.php?idp=$produto_id&sts=$produto_status' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect'>
-				Desativar
+				<a href='painel.php?p=33&idp=$produto_id&sts=$produto_status' class='mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect'>
+				$labelStatus
 				</a>
 				</div>
 				</div>

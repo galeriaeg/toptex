@@ -16,6 +16,10 @@
 			include_once "modules/usuarios/index.php";
 			break;
 			
+			case 21:
+			include_once "modules/usuarios/cadastro.php";
+			break;
+			
 			
 			/* produtos */
 			case 3:
@@ -40,12 +44,11 @@
 			include_once "modules/categorias/index.php";
 			break;
 			
-			case 0:
-			include_once "modules/categorias/index.php";
+			case 99:
+			include_once "logout.php";
 			break;
 			
 			default:
-			//echo "erro 404";
 			include_once "modules/dashboard/index.php";
 			break;
 		}	

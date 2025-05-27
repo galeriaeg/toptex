@@ -5,6 +5,6 @@
 		<a href="painel.php?p=1" class="mdl-navigation__link">Inicio</a>
 		<a href="painel.php?p=3" class="mdl-navigation__link">Produtos</a>
 		<a href="painel.php?p=4" class="mdl-navigation__link">Categoria</a>
-		<a href="painel.php?p=0" class="mdl-navigation__link">Sair</a>
+		<a href="painel.php?p=99" class="mdl-navigation__link">Sair</a>
 	</nav>
 </div>
