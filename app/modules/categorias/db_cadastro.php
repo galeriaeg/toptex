@@ -22,6 +22,7 @@
 		if ($stmt->execute()) {
 			echo "<script>alert('Categoria cadastrada com sucesso!')</script>";
 			echo "<script>location.assign('painel.php?p=4');</script>";
+			exit();
 		} else {
 			echo "Erro ao inserir categoria: " . $stmt->error;
 		}

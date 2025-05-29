@@ -8,7 +8,7 @@
 	}
 
 	.mdl-layout__header{
-		height:64px;
+		height:56px;
 	}
 	
 	.mdl-layout__container{
@@ -30,10 +30,20 @@
 	}
 
 	.box-form{
-		width:325px;
+		width:100%;
+		max-width:325px;
 		margin:0 auto;
 		margin-top:30px;
 		margin-bottom:100px !important;
+	}
+	
+	/**grid registros **/
+	.mdl-list{
+		width:100%;
+		/*background:#de0;*/
+	}
+	.mdl-list__item{
+		border-bottom:1px solid #DDD;
 	}
 
 }
@@ -65,6 +75,19 @@
 		margin-bottom:100px !important;
 	}	
 	
+	.mdl-layout__header-row{
+		padding:0 16px 0 55px
+	}	
+	
+	/**grid registros **/
+	.mdl-list{
+		width:100%;
+		/*background:#de0;*/
+	}
+	.mdl-list__item{
+		border-bottom:1px solid #DDD;
+	}	
+	
 }
 
 
@@ -74,10 +97,23 @@
 /*** customizado ***/
 
 /*.mdl-js-layout*/
-	
+
+
+.btn_register{
+	margin: 0 0 0 15px;
+    color: #999;
+    cursor: pointer;
+}
+span.btn_register:hover{
+    color: #0079ee;
+}
+
+.mdl-textfield__input{
+	color:#555;
+}
 
 .material-symbols-outlined{
-	font-size:30px;
+	font-size:28px;
 }
 
 .mdl-card{
@@ -127,6 +163,7 @@ nav.mdl-navigation .mdl-badge[data-badge]:after{
 
 .mdl-button{
 	font-size:14px;
+	display:block;
 }
 
 /*** fontes ****/
@@ -150,10 +187,16 @@ h4{
 }
 
 a{
-	color:#425c76;
+	color:#555;
 	text-decoration:none;
 }
+a:hover{
+	color:#0079ee;
+}
 
+.aspan{
+	margin-top:40px;
+}
 
 label{
 	font-size:13px;

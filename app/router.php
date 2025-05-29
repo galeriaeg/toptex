@@ -45,9 +45,23 @@
 			break;
 			
 			case 41:
-			include_once "modules/categorias/cadastro.php";
+			include_once "modules/categorias/db_cadastro.php";
+			break;
+
+			case 42:
+			include_once "modules/categorias/form.php";
+			break;
+
+			case 43:
+			include_once "modules/categorias/db_edita.php";
 			break;
 			
+			case 44:
+			include_once "modules/categorias/db_deleta.php";
+			break;
+			
+
+
 			case 99:
 			include_once "logout.php";
 			break;
